@@ -1,0 +1,6 @@
+nvcc -Wno-deprecated-gpu-targets -c -O3 assignment4.cu -o assignment4.o
+nvcc -Wno-deprecated-gpu-targets -lcudart -lcuda assignment4.o implementation.o -o assignment4
+Running the algorithm on 100 by 100 array for 10 iteration takes 0.000266s
+Running the algorithm on 100 by 100 array for 1000 iteration takes 0.02111s
+Running the algorithm on 1000 by 1000 array for 100 iteration takes 0.1489s
+Running the algorithm on 1000 by 1000 array for 10000 iteration takes 21.68s
